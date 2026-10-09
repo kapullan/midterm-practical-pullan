@@ -1,0 +1,365 @@
+:root
+    {
+        --primary-color: #a06cd5;
+        --bg-color: #E2CFEA;
+        --main-font: "Montserrat", sans-serif;
+    }
+
+body 
+    {
+        font-family: var(--main-font);
+        background-color: var(--bg-color);
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+main
+    {
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+header 
+    {
+        background-color: white;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        height: 100px;
+    }
+
+.logo 
+    {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-left: 80px;
+    }
+
+.logo-text
+    {
+        font-size: 32px;
+        color: #1a1a1a;
+        font-weight: 700;
+        padding-left: 10px;
+    }
+
+.profile-image 
+    {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid black
+    }
+
+.nav-menu 
+    {
+        list-style-type: none;
+        margin: 10px;
+        padding: 0;
+        display: flex;
+        gap: 48px;
+        align-items: center;
+        font-size: 24px;
+        padding-right: 80px;
+    }
+
+.nav-menu a 
+    {
+        text-decoration: none;
+        color: #000000;
+        padding: 10px 20px;
+        font-weight: 500;
+    }
+
+.nav-menu a:hover
+    {
+        text-decoration: none;
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 10px;
+    }
+
+.nav-menu a.active
+    {
+        text-decoration: none;
+        background-color: #a06cd5;
+        color: white;
+        padding: 10px 20px;
+        font-weight: Medium;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+    }
+
+.nav-menu a.active:hover
+    {
+        background-color: #8a4fc1;
+        color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+.hero-container
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        gap: 20px;
+    }
+
+.hero-text
+    {
+        max-width: 550px;
+        padding-left: 40px;
+        margin-top: 160px;
+    }
+
+.hero-text h1
+    {
+        font-size: 56px;
+        margin-top: 0;
+        margin-bottom: 24px;
+        color: #000000;
+        font-weight: 700;
+        align-items: center;
+        padding-bottom: 24px;
+    }
+
+.hero-text p
+    {
+        font-size: 24px;
+        color: #000000;
+        font-weight: 400;
+        align-items: left;
+        padding-bottom: 16px;
+    }
+
+.hero-image 
+    {
+        max-width: 550px;
+        border-radius: 800px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        margin-top: 120px;
+        margin-right: 40px;
+    }
+
+.button 
+    {
+        background-color: #a06cd5;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 24px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+.button:hover 
+    {
+        background-color: #8a4fc1;
+    }
+
+.button:focus
+    {
+        background-color: white;
+    }
+
+.skills-container 
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 60px;
+        max-width: 1200px;
+        margin: 0 auto;
+    } 
+
+.skills-content
+    {
+        padding: 20px;
+        text-align: left;
+        width: 100%;
+    }
+
+.skills-content h1
+    {
+        font-size: 48px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+.skills-description
+    {
+        font-size: 24px;
+        margin-top: 32px;
+    }
+
+.skills-layout-columns
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        gap: 50px;
+        margin-top: 20px;
+    }
+
+.skills-wrapper
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        min-width: 320px;
+        max-width: 450px;
+    }
+
+.skill-item
+    {
+        align-items: flex-start;
+        width: 100%;
+        display: flex; 
+        flex-direction: column;
+    }
+
+.skill-name
+    {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+.skill-bar
+    {
+        background-color: #ffffff;
+        border-radius: 8px;
+        height: 16px;
+        margin-top: 8px;
+        width: 100%;
+    }
+
+.progress-fill
+    {
+        background-color: #8a4fc1;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+.level-70
+    {
+        width: 70%;
+    }  
+
+.level-85
+    {
+        width: 85%;
+    }
+
+.level-80
+    {
+        width: 80%;
+    }
+
+.level-65
+    {
+        width: 65%;
+    }
+
+.level-50
+    {
+        width: 50%;
+    }
+
+.table-wrapper
+    {
+        margin-left: auto;
+        margin-top: 40px;
+        background-color: white;
+        padding: 24px;
+        min-width: 350px;
+        max-width: 550px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.015);
+        margin-left: auto;
+    }
+
+table
+    {
+        width: 100%;
+        font-size: 24px;
+    }
+
+caption
+    {
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 16px;
+        color: #000000;
+        text-align: left;
+    }
+
+th, td
+    {
+        padding: 12px 10px;
+        text-align: left;
+        border-bottom: 1px solid #000000;
+    }
+
+thead th
+    {
+        color: black;
+        font-weight: 700;
+    }
+
+footer
+    {
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+.contact-container 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 60px;
+        align-items: center;
+    } 
+
+.contact-text
+    {
+        max-width: 550px;
+        text-align: center;
+    }
+
+.contact-text h1
+    {
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #000000;
+    }
+
+.contact-description
+    {
+        font-size: 24px;
+        color: #000000;
+        margin-top: 10px;
+    }
+
+.contact-links
+    {
+        font-size: 24px;
+        color: #000000;
+        margin-top: 10px;
+    }
