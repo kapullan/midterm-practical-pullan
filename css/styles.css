@@ -405,3 +405,213 @@ footer
         margin: 16px
     }
 
+@media screen and (max-width: 767px)
+{
+    header
+    {
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .logo
+    {
+        padding-left: 0;
+    }
+
+    .logo-text
+    {
+        font-size: 26px;
+        padding-left: 0;
+    }
+
+    .profile-image
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav-menu
+    {
+        padding-right: 0;
+        gap: 12px;
+        font-size: 16px;
+    }
+
+    .nav-menu a
+    {
+        padding: 6px 12px;
+    }
+
+    .hero-container
+    {
+        flex-direction: column;
+    }
+
+    .hero-text
+    {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .hero-text h1
+    {
+        font-size: 32px;
+    }
+
+    .hero-text p
+    {
+        font-size: 18px;
+    }
+
+    .button
+    {
+        font-size: 18px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .skills-content h1
+    {
+        font-size: 32px;
+    }
+
+    .skills-description
+    {
+        font-size: 18px;
+    }
+
+    .skills-wrapper
+    {
+        width: 100%;
+    }
+
+    .skill-name
+    {
+        font-size: 18px;
+    }
+
+    .table-wrapper
+    {
+        width: 100%;
+        padding: 16px;
+        box-sizing: border-box;
+        overflow-x: auto;
+    }
+
+    table
+    {
+        font-size: 16px;
+    }
+
+    caption
+    {
+        font-size: 18px;
+    }
+
+    .contact-container
+    {
+        padding: 20px;
+    }
+
+    .contact-text h1
+    {
+        font-size: 32px;
+    }
+
+    .contact-description,
+    .contact-links p
+    {
+        font-size: 18px;
+    }
+
+    .contact-form
+    {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .contact-form h2
+    {
+        font-size: 24px;
+    }
+
+    .form-group input, 
+    .form-group textarea 
+    {
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    footer
+    {
+        padding-top: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) 
+{
+    header 
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px;
+        height: auto;
+        min-height: 100px;
+        padding-right: 20px; 
+    }
+
+    .nav-menu {
+        gap: 20px;
+        padding-right: 20px;
+        font-size: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+    .button {
+        width: auto;
+    }
+
+    .skills-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        width: 80%;
+    }
+
+    .table-wrapper {
+        width: 80%;
+    }
+
+    .contact-form {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .hero-text h1 {
+        font-size: 56px;
+    }
+
+    .skills-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 60%;
+    }
+
+    .table-wrapper {
+        width: 50%;
+    }
+
+    .contact-form {
+        width: 50%;
+    }
+}
